@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: url('./assets/bg.jpg');
+  background-size: cover;
+}
+
+body {
+  color: #e5e7eb;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section {
+  background: #212936;
+  border: none;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  width: 350px;
+}
+
+img#cover-art {
+  border-radius: 1.25rem;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h3 {
+  color: #4d5562;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
+
+.label-container {
+  margin: 1rem 0;
+}
+
+.timer {
+  color: #4d5562;
+  font-size: 0.625rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-container {
+  margin: 1rem 0;
+}
+
+.timer {
+  margin-bottom: 0.25rem;
+}
+
+.play-progress {
+  background-color: #c93b76;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.175rem 0rem;
+  width: 80%;
+}
+
+.backdrop {
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.175rem 0;
+  width: 100%;
+}
+
+.menu-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+button.menu {
+  background: none;
+  border: none;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+#play {
+  border-radius: 50%;
+  background: #c93b76;
+  padding: 0.5rem;
+}
