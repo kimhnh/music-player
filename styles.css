@@ -8,7 +8,7 @@
 }
 
 html {
-  background: url('./assets/bg.jpg');
+  background: url('./public/bg.jpg');
   background-size: cover;
 }
 
@@ -85,15 +85,15 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: #c93b76;
   border-radius: 1rem;
-  box-shadow: 0 0 10px #c93b76;
+  box-shadow: 0 0 15px #c93b76;
 }
 
 /* Menu */
 .menu-container {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -106,7 +106,20 @@ button.menu {
 
 #play {
   border-radius: 50%;
-  background: #c93b76;
+  background-color: #c93b76;
   padding: 0.5rem;
   box-shadow: 0 0 10px #c93b76;
+  height: 3rem;
+  width: 3rem;
+  transition: background-color 1s ease;
+}
+
+#play:hover {
+  background-color: #c93b76a1;
+  transition: background-color 1s ease;
+}
+
+i {
+  color: #e5e7eb;
+  font-size: 1rem;
 }
