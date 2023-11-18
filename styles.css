@@ -22,15 +22,16 @@ body {
 }
 
 section {
-  background: #212936;
+  background: #121826a6;
   border: none;
   border-radius: 1.25rem;
-  padding: 1.5rem;
+  padding: 1.25rem;
   width: 350px;
 }
 
 img#coverArt {
   border-radius: 1.25rem;
+  display: block;
   width: 100%;
 }
 
@@ -50,49 +51,56 @@ h3 {
   margin: 1rem 0;
 }
 
+/* Progress-related styling */
+.progress-container {
+  margin: 1.5rem 0;
+}
+
 .timer {
   color: #4d5562;
   font-size: 0.625rem;
   font-weight: 500;
   display: flex;
   justify-content: space-between;
-}
-
-.progress-container {
-  margin: 1rem 0;
-}
-
-.timer {
   margin-bottom: 0.25rem;
 }
 
-.play-progress {
-  background-color: #c93b76;
-  border: none;
-  border-radius: 1rem;
-  padding: 0.175rem 0rem;
-  width: 80%;
+.timeline {
+  font-size: 0;
 }
 
-.backdrop {
-  background-color: #e5e7eb;
+/* Progress bar */
+progress {
   border: none;
   border-radius: 1rem;
-  padding: 0.175rem 0;
+  height: 4px;
   width: 100%;
 }
 
+progress::-webkit-progress-bar {
+  background-color: #e5e7eb;
+  border-radius: 1rem;
+}
+
+progress::-webkit-progress-value {
+  background-color: #c93b76;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #c93b76;
+}
+
+/* Menu */
 .menu-container {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 button.menu {
   background: none;
   border: none;
-  margin: 0 0.5rem;
+  margin: 0 0.65rem;
   cursor: pointer;
 }
 
@@ -100,4 +108,5 @@ button.menu {
   border-radius: 50%;
   background: #c93b76;
   padding: 0.5rem;
+  box-shadow: 0 0 10px #c93b76;
 }
