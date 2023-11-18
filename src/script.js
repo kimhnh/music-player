@@ -84,7 +84,7 @@ function showProgress() {
 
 function toggleIcon() {
   if (audio.paused == true) {
-    playBtn.innerHTML = `<img src="./public/Play_fill.svg" alt="">`;
+    playBtn.innerHTML = `<img src="./public/svg/Play_fill.svg" alt="">`;
   } else {
     playBtn.innerHTML = `<i class="fa-solid fa-pause"></i>`;
   }

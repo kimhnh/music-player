@@ -6,7 +6,7 @@ import {
   playStop,
   nextSong,
   setContent,
-} from '../src/script.js';
+} from './src/script.js';
 
 playBtn.addEventListener('click', playStop);
 nextBtn.addEventListener('click', nextSong);
