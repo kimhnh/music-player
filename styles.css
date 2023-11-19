@@ -8,7 +8,10 @@
 }
 
 html {
-  background: url('./public/img/bg.jpg');
+  background: url('./public/img/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -122,4 +125,10 @@ button.menu {
 i {
   color: #e5e7eb;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 393px) {
+  section {
+    width: 300px;
+  }
 }
