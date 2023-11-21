@@ -3,4 +3,4 @@ A simple music player that cycles through 2 songs with a click of a button. This
 
 ## Preview
 ![alt text](./public/img/music-player-demo-1280.png)
-[Live Demo](https://slddays.github.io/music-player/) / [devChallenges](https://devchallenges.io/solution/3000)
+[Live Demo](https://kimhnh.github.io/music-player/) / [devChallenges](https://devchallenges.io/solution/3000)
