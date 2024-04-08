@@ -1,4 +1,4 @@
-import { playlist } from '../src/data.js';
+import { playlist } from './src/data.js';
 
 const artist = document.querySelector('.label__artist');
 const bar = document.querySelector('.bar');
