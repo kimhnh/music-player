@@ -1,45 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles.css"
+    />
     <title>Music Player</title>
-    <link rel="shortcut icon" href="./public/svg/favicon.ico" type="image/x-icon">
-</head>
+    <link
+      rel="shortcut icon"
+      href="./public/svg/favicon.ico"
+      type="image/x-icon"
+    />
+    <script
+      defer
+      type="module"
+      src="./app.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <main>
-        <section class="container">
-            <div class="thumbnail">
-                <img src="" alt="" id="coverArt">
+      <section class="container">
+        <div class="thumbnail">
+          <img
+            src=""
+            alt=""
+            class="thumbnail__cover-art"
+          />
+        </div>
+        <div class="label">
+          <h1 class="label__title"></h1>
+          <h3 class="label__artist"></h3>
+        </div>
+        <div class="progress">
+          <div class="progress__timer">
+            <div class="progress__timer--current">
+              <span class="progress__timer--min">00</span>&colon;<span class="progress__timer--sec"
+                >00</span
+              >
             </div>
-            <div class="label-container">
-                <h1 class="title">Title goes here</h1>
-                <h3 class="artist">Artist placeholder</h3>
-            </div>
-            <div class="progress-container">
-                <div class="timer">
-                    <div class="counting-up"><span class="min">00</span>&colon;<span class="sec">00</span></div>
-                    <span class="duration">00:00</span>
-                </div>
-                <div class="timeline">
-                    <progress id="bar" value="0" max="100"></progress>
-                </div>
-            </div>
-            <div class="menu-container">
-                <button class="menu" id="previous"><img src="./public/svg/Stop_and_play_fill.svg" alt=""></button>
-                <button class="menu" id="play"><img src="./public/svg/Play_fill.svg" alt=""></button>
-                <button class="menu" id="next"><img src="./public/svg/Stop_and_play_fill_reverse.svg" alt=""></button>
-            </div>
-        </section>
+            <span class="progress__timer--duration">00:00</span>
+          </div>
+          <div class="progress__timer--timeline">
+            <progress
+              class="bar"
+              value="0"
+              max="100"
+            ></progress>
+          </div>
+        </div>
+        <div class="menu">
+          <button class="menu__button menu__button--previous">
+            <img
+              src="./public/svg/Stop_and_play_fill.svg"
+              alt=""
+              class="previous"
+            />
+          </button>
+          <button class="menu__button menu__button--play">
+            <img
+              src="./public/svg/Play_fill.svg"
+              alt=""
+              class="play"
+            />
+          </button>
+          <button class="menu__button menu__button--next">
+            <img
+              src="./public/svg/Stop_and_play_fill_reverse.svg"
+              alt=""
+              class="next"
+            />
+          </button>
+        </div>
+      </section>
     </main>
-    <script type="module" src="./app.js"></script>
-</body>
-
+  </body>
 </html>
